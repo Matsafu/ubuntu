@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubuntu Crafts Cooperative</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ubuntu Crafts</h1>
+    <p>Handcrafted with heart in Limpopo</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Our Story</h2>
+      <p>
+        We empower rural artisans by bringing their handmade pottery, woven baskets,
+        traditional clothing, and organic skincare to the world.
+      </p>
+    </section>
+
+    <section class="products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="basket.jpg" alt="Woven Basket" />
+          <h3>Woven Basket</h3>
+          <p>R120</p>
+          <button class="add-to-cart" onclick="addToCart('Woven Basket', 120)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="skincare.jpg" alt="Organic Skincare" />
+          <h3>Organic Skincare</h3>
+          <p>R300</p>
+          <button class="add-to-cart" onclick="addToCart('Organic Skincare', 300)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="pottery.jpg" alt="Pottery" />
+          <h3>Pottery</h3>
+          <p>R250</p>
+          <button class="add-to-cart" onclick="addToCart('Pottery', 250)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="clothing.jpg" alt="Traditional Clothing" />
+          <h3>Traditional Clothing</h3>
+          <p>R500</p>
+          <button class="add-to-cart" onclick="addToCart('Traditional Clothing', 500)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart-summary">
+      <h2>Cart Summary</h2>
+      <ul id="cart-list"></ul>
+      <p id="cart-items">Items: 0</p>
+      <p id="cart-total">Total: R0</p>
+      <button class="checkout-btn" onclick="goToCheckout()">Go to Checkout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ubuntu Crafts Cooperative | Built with love in South Africa 🇿🇦</p>
+  </footer>
+
+  <script src="cart.js" defer></script>
+</body>
+</html>

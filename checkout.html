@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Ubuntu Crafts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <p>Review your items and confirm your order</p>
+  </header>
+
+  <main class="checkout-page">
+    <section class="checkout-cart">
+      <h2>Your Cart</h2>
+      <ul id="checkout-list"></ul>
+      <p id="checkout-total">Total: R0</p>
+      <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+      <button class="back-btn" onclick="window.location.href='Ubuntu_crafts_index.html'">← Continue Shopping</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ubuntu Crafts Cooperative | Thank you for supporting local artisans </p>
+  </footer>
+
+  <script src="cart.js" defer></script>
+</body>
+</html>
